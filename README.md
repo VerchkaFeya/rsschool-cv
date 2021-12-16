@@ -1,1 +1,1 @@
-# rsschool-cv
+https://VerchkaFeya.github.io/rsschool-cv/cv
