@@ -3,11 +3,11 @@
 ___
 
 ## Contact
-* Phone Number: +&9133867943
+* Phone Number: +79133867943
 * E-mail: krasnova.verav@gmail.com
 * GitHub: VerchkaFeya
 ## About Me
-I am 27 years old, live in Novosibirsk. I studied for architect and have graduated in 2016. For all this time I've been working as an interior designer. But I dont like this kind of job for many reasons. Now I want to have job which is modern, interesting, thought-provoking, command. I choose to study for Frontend Developer because this development scope is more close for my interests and art skills. Now I am on the very beginning of the my frontend education. 
+I am 28 years old, live in Novosibirsk. I studied for architect and have graduated in 2016. For all this time I've been working as an interior designer. But I don't like this kind of job for many reasons. Now I want to have job which is modern, interesting, thought-provoking, command. I choose to study for Frontend Developer because this development scope is more close for my interests and art skills. Now I am on the very beginning of the my frontend education. 
 ## Skills
 * HTML (fundamental)
 * CSS (fundamental)
