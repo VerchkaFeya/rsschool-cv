@@ -4,11 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.scc">
+    <link rel="icon" href="assets/favicon.ico">
+    <title>CV Vera Krasnova</title>
 </head>
 <body>
-    <div>Some text</div>
-    <div>Some text</div>
-    <div>Some text</div>
+    <header>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="section" id="profile">
+            <h1>Vera Krasnova</h1>
+        </section>
+        <section class="section" id="contacts">
+            <h2>Contacts</h2>
+            <ul class="contacts-list">
+                <li class="contacts-item">Phone number: +79133867943</li>
+                <li class="contacts-item">E-mail: krasnova.verav@gmail.com</li>
+                <li class="contacts-item">Git Hub: VerchkaFeya</li>
+            </ul>
+        </section>
+        <section class="section" id="summary">
+            <h2>Summary</h2>
+            <p>I am 28 years old, live in Novosibirsk. I studied for architect and have graduated in 2016. For all this time I've been working as an interior designer. But I don't like this kind of job for many reasons. Now I want to have job which is modern, interesting, thought-provoking, command. I choose to study for Frontend Developer because this development scope is more close for my interests and art skills. Now I am on the very beginning of the my frontend education. </p>
+        </section>
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li class="skills-item">HTML (fundamental)</li>
+                <li class="skills-item">CSS (fundamental)</li>
+                <li class="skills-item">JavaScript (fundamental)</li>
+            </ul>
+        </section>
+        <section class="section" id="code">
+            <h2>Code</h2>
+            <pre>
+                var isSquare = function(arr){
+                    if (arr.length === 0) {
+                      return undefined;
+                    } else {
+                    return arr.find(item => Math.sqrt(item)%1 !== 0) === undefined ? true : false;
+                    }
+                  }
+            </pre>
+        </section>
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <p>Unfortunately, I have no experience in web development or something like that. That's one of many reasons I chose RS School course.</p>
+            <a href="https://verchkafeya.github.io/rsschool-cv/cv">CV Task for RS School</a>
+        </section>
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li class="education-item">Novosibirsk State University of Architecture, Design and Arts</li>
+                <ul>
+                    <li>Architect</li>
+                </ul>
+                <li class="education-item">Self-education</li>
+                <ul>
+                    <li>HTML Academy</li>
+                    <li>Learn.JavaScript</li>
+                </ul>
+            </ul>
+        </section>
+        <section class="section" id="english">
+            <h2>English</h2>
+            <p>B1-Pre-Intermediate</p>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
