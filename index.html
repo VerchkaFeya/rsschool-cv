@@ -23,18 +23,27 @@
         </ul>
     </header>
     <main>
-        <section class="section" id="profile">
-            <p>Hello, my name is</p>
-            <h1>Vera Krasnova</h1>
-        </section>
-        <section class="section" id="contacts">
-            <h2>Contacts</h2>
-            <ul class="contacts-list">
-                <li class="contacts-item">Phone number: +79133867943</li>
-                <li class="contacts-item">E-mail: krasnova.verav@gmail.com</li>
-                <li class="contacts-item">Git Hub: VerchkaFeya</li>
-            </ul>
-        </section>
+        <div class="about-me"> 
+            <div>
+                <section class="section" id="profile">
+                    <p class="hello">Hello, my name is</p>
+                    <h1>Vera Krasnova</h1>
+                </section>
+                <section class="section" id="contacts">
+                    <ul class="contacts-list">
+                        <li class="contacts-item"><span>Phone number:</span> +79133867943</li>
+                        <li class="contacts-item"><span>E-mail:</span> krasnova.verav@gmail.com</li>
+                        <li class="contacts-item"><span>Git Hub:</span> VerchkaFeya</li>
+                    </ul>
+                    
+                </section>
+            </div>
+            <div>
+                <img class="my-photo" src="assets/photo.jpg" alt="My Photo" height="200px">
+            </div>
+            
+        </div>
+        
         <section class="section" id="summary">
             <h2>Summary</h2>
             <p>I am 28 years old, live in Novosibirsk. I studied for architect and have graduated in 2016. For all this time I've been working as an interior designer. But I don't like this kind of job for many reasons. Now I want to have job which is modern, interesting, thought-provoking, command. I choose to study for Frontend Developer because this development scope is more close for my interests and art skills. Now I am on the very beginning of the my frontend education. </p>
@@ -49,15 +58,18 @@
         </section>
         <section class="section" id="code">
             <h2>Code</h2>
-            <pre>
-                var isSquare = function(arr){
-                    if (arr.length === 0) {
-                      return undefined;
-                    } else {
-                    return arr.find(item => Math.sqrt(item)%1 !== 0) === undefined ? true : false;
-                    }
-                  }
-            </pre>
+            <code  > 
+                <pre class="code"> 
+    var isSquare = function(arr) {
+        if (arr.length === 0) {
+            return undefined;
+        } else {
+            return arr.find(item => Math.sqrt(item)%1 !== 0) === undefined ? true : false;
+        }
+    }
+                </pre>
+            </code>
+            
         </section>
         <section class="section" id="projects">
             <h2>Projects</h2>
