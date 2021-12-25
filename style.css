@@ -51,15 +51,16 @@ footer {
     line-height: 50px;
     text-decoration: none;
     /* text-transform: uppercase; */
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
-    color: grey;
+    color: rgb(175, 175, 175);
     /* border: 1px dotted red; */
 
 }
 
 .section,
-.footer-items {
+.footer-items,
+.about-me-container {
     margin-left: 50px;
     margin-right: 50px;
     /* border: 1px solid yellow; */
@@ -91,6 +92,7 @@ footer {
 }
 
 .about-me {
+    /* border: 1px solid green; */
     margin: 0 0;
     padding: 0 0;
     background: linear-gradient(to top, rgb(228, 228, 228), rgb(255, 255, 255) );
