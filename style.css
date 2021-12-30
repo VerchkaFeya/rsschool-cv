@@ -1,5 +1,120 @@
-/*
-some comments
-some comments
-some comments
-*/
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 500;
+    width: 300px;
+}
+
+h2 {
+    font-weight: 500;
+    width: 150px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+main,
+footer,
+header {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(175, 175, 175);
+}
+
+.section,
+.footer-items,
+.about-me-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.social-list {
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-list-item {
+    margin: 0;
+    padding: 0;
+}
+
+.about-me {
+    margin: 0 0;
+    padding: 0 0;
+    background: linear-gradient(to top, rgb(228, 228, 228), rgb(255, 255, 255) );
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.my-photo {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-left: 100px;
+}
+
+.hello {
+    font-weight: bold;
+}
+
+.code {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0;    
+    font-size: 13px;
+}
+
+.contacts-list {
+    list-style: none;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.contacts-item {
+    padding-top: 10px;
+}
+
+span {
+    font-weight: bolder;
+}
