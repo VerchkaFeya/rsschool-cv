@@ -9,29 +9,22 @@ body {
 
 h1 {
     font-weight: 500;
-    /* border: 1px solid green; */
     width: 300px;
-
 }
 
 h2 {
     font-weight: 500;
-    /*border: 1px solid green;*/
     width: 150px;
     padding-top: 30px;
     margin-top: 30px;
-   
-    
 }
 
 main,
 footer,
 header {
-    /* border: 1px solid red; */
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 footer {
@@ -50,12 +43,9 @@ footer {
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
-    /* text-transform: uppercase; */
     font-size: 16px;
     font-weight: 700;
     color: rgb(175, 175, 175);
-    /* border: 1px dotted red; */
-
 }
 
 .section,
@@ -63,7 +53,6 @@ footer {
 .about-me-container {
     margin-left: 50px;
     margin-right: 50px;
-    /* border: 1px solid yellow; */
 }
 
 .footer-items {
@@ -71,28 +60,23 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    
 }
 
 .social-list {
-    /* border: 1px solid green; */
     width: 120px;
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .social-list-item {
-    /* border: 1px dotted red; */
     margin: 0;
     padding: 0;
 }
 
 .about-me {
-    /* border: 1px solid green; */
     margin: 0 0;
     padding: 0 0;
     background: linear-gradient(to top, rgb(228, 228, 228), rgb(255, 255, 255) );
@@ -107,7 +91,6 @@ footer {
     border-radius: 50%;
     border: 5px solid white;
     margin-left: 100px;
-    
 }
 
 .hello {
@@ -119,10 +102,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 0 0;    
-    /* border: 1px solid red;  */
-    /* background-color: rgb(240, 240, 240); */
     font-size: 13px;
-    
 }
 
 .contacts-list {
@@ -133,7 +113,6 @@ footer {
 
 .contacts-item {
     padding-top: 10px;
-    /* border: 1px solid blue; */
 }
 
 span {
