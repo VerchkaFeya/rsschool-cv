@@ -1,0 +1,529 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+ul,
+li,
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100%;
+}
+body__wrapper {
+  max-width: 1440px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+.header__nav {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0A467C;
+}
+.nav__link:hover {
+  color: #000;
+}
+
+.section {
+  padding: 30px 0 0 0;
+}
+.section::after {
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #000;
+  margin: 40px auto 0 auto;
+}
+.section:last-of-type {
+  margin-bottom: 40px;
+}
+.section:last-of-type::after {
+  display: none;
+}
+
+.title-container {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #0A467C;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 3.8rem;
+  padding: 0 0 0 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom 7px right 50%;
+}
+
+.slider {
+  margin: 30px auto 0 auto;
+}
+.slider__radio {
+  display: none;
+}
+.slider__slides-wrapper {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: rgba(223, 223, 211, 0.1);
+  border: 4px solid #0A467C;
+  margin: 0 auto 0 auto;
+}
+.slider__slides-wrapper:hover .slider__overview {
+  transform: translateX(0);
+}
+.slider__slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+.slider__slide {
+  width: 20%;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+}
+.slider__slide img {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.slider__slide:hover img {
+  transform: scale(1.03);
+  filter: grayscale(1);
+}
+.slider__overview {
+  padding: 20px 20px 20px 30px;
+  background-color: rgba(255, 255, 255, 0.88);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in;
+}
+.slider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 0 0;
+}
+.slider__bar {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 3px;
+}
+.slider__bar:hover .slider__inside-bar {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+.slider__bar:active .slider__inside-bar {
+  transform: scale(1.3);
+  opacity: 1;
+}
+.slider__inside-bar {
+  background-color: #0A467C;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  transition: 0.3s;
+  opacity: 1;
+}
+.slider #radio1:checked ~ .slider__slides-wrapper .slider__slides {
+  margin-left: 0;
+}
+.slider #radio1:checked ~ .slider__controls .inside-bar_1 {
+  background-color: #FFCC00 !important;
+}
+.slider #radio2:checked ~ .slider__slides-wrapper .slider__slides {
+  margin-left: -100%;
+}
+.slider #radio2:checked ~ .slider__controls .inside-bar_2 {
+  background-color: #FFCC00 !important;
+}
+.slider #radio3:checked ~ .slider__slides-wrapper .slider__slides {
+  margin-left: -200%;
+}
+.slider #radio3:checked ~ .slider__controls .inside-bar_3 {
+  background-color: #FFCC00;
+}
+.slider #radio4:checked ~ .slider__slides-wrapper .slider__slides {
+  margin-left: -300%;
+}
+.slider #radio4:checked ~ .slider__controls .inside-bar_4 {
+  background-color: #FFCC00;
+}
+.slider #radio5:checked ~ .slider__slides-wrapper .slider__slides {
+  margin-left: -400%;
+}
+.slider #radio5:checked ~ .slider__controls .inside-bar_5 {
+  background-color: #FFCC00;
+}
+
+.overview {
+  font-size: 1.4rem;
+}
+.overview__title {
+  padding: 0 0 0 10px;
+  color: #0A467C;
+  line-height: 200%;
+  font-size: 2rem;
+}
+.overview__goals-title {
+  margin: 10px 0 0 0;
+}
+.overview__goals {
+  margin: 5px 0 5px 0;
+}
+.overview__goals-item {
+  display: block;
+  padding-left: 10px;
+  margin: 3px 0 2px 0;
+}
+.overview span {
+  font-weight: bold;
+  margin-right: 5px;
+  transition: none !important;
+}
+.overview__deploy-link, .overview__github-link {
+  margin: 10px 0 10px 0;
+  color: #0A467C;
+  font-weight: bold;
+}
+.overview__deploy-link:hover, .overview__github-link:hover {
+  color: #FFCC00;
+}
+
+.education-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.education-table__row {
+  display: flex;
+  justify-content: space-between;
+  color: #0A467C;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+.education-table__year {
+  padding: 0 0 0 10px;
+  min-height: 50px;
+  border-right: 1px solid #d0d0d0;
+  width: 25%;
+  min-width: 100px;
+  max-width: 300px;
+  text-align: center;
+}
+.education-table__school {
+  padding: 0 0 0 50px;
+  width: 75%;
+}
+.education-table__school::before {
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-color: #0A467C;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.education-table__subitem {
+  padding: 0px 10px 15px 65px;
+  width: 75%;
+  font-size: 1.6rem;
+  color: #000;
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.contacts-list__item {
+  width: 33%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.contacts-list__item a:hover {
+  color: #FFCC00;
+}
+.contacts-list__item::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 0 0;
+  background-image: url("./assets/icons/github-icon.svg");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contacts-list__item:nth-child(1)::before {
+  background-image: url("./assets/icons/phone-icon.svg");
+}
+.contacts-list__item:nth-child(2)::before {
+  background-image: url("./assets/icons/mail-icon.svg");
+}
+.contacts-list__item:nth-child(3)::before {
+  background-image: url("./assets/icons/location-icon.svg");
+}
+.contacts-list__item:nth-child(4)::before {
+  background-image: url("./assets/icons/github-icon.svg");
+}
+.contacts-list__item:nth-child(5)::before {
+  background-image: url("./assets/icons/linkedin-icon.svg");
+}
+
+.skills-list {
+  display: flex;
+  gap: 10px;
+}
+.skills-list__skill {
+  padding: 90px 0 40px 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-weight: 600;
+  color: #0A467C;
+  line-height: 150%;
+  text-align: left;
+}
+.skills-list__skill:nth-child(1) {
+  width: 19%;
+  background-image: url("./assets/icons/html-icon.svg");
+}
+.skills-list__skill:nth-child(2) {
+  width: 27%;
+  background-image: url("./assets/icons/css-icon.svg");
+}
+.skills-list__skill:nth-child(3) {
+  width: 27%;
+  background-image: url("./assets/icons/js-icon.svg");
+}
+.skills-list__skill:nth-child(4) {
+  width: 27%;
+  background-image: url("./assets/icons/design-icon.svg");
+}
+.skills-list__subskill {
+  font-family: "Inter";
+  padding-left: 2rem;
+  font-weight: 400;
+  color: #000;
+}
+.skills-list__subskill::before {
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: #0A467C;
+  border-radius: 50%;
+  margin: 0 5px 3px 0;
+}
+.skills-list__subskill_start {
+  color: grey;
+}
+
+.body {
+  background-color: #F6F5F5;
+}
+
+.about {
+  margin: 40px 0 0 0;
+}
+.about::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./assets/decorative-images/grey-circles.svg");
+  max-width: 220px;
+  max-height: 220px;
+  width: 100%;
+  height: 100%;
+  left: 45%;
+  z-index: 0;
+}
+.about__wrapper {
+  position: relative;
+}
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about__photo {
+  width: 60%;
+  align-self: flex-end;
+  padding: 0 30px 0 0;
+}
+.about__photo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./assets/decorative-images/blue-circles.svg");
+  background-repeat: no-repeat;
+  max-width: 455px;
+  max-height: 510px;
+  width: 100%;
+  height: 100%;
+  left: -60px;
+  bottom: 10px;
+  transform: rotate(135deg);
+  z-index: 0;
+}
+.about__image {
+  max-width: 422px;
+  min-width: 200px;
+  width: 100%;
+  vertical-align: bottom;
+  position: relative;
+  z-index: 2;
+}
+.about__info {
+  width: 40%;
+  align-self: flex-end;
+  position: relative;
+}
+.about__name {
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #0A467C;
+  width: 100%;
+  text-align: right;
+  margin: 0 100px 20px 0;
+  z-index: 2;
+}
+.about__position {
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 100%;
+  text-transform: lowercase;
+  color: #0A467C;
+  text-align: right;
+  margin: 0px 0 20px 0;
+  z-index: 2;
+}
+.about__title-container {
+  display: flex;
+  justify-content: center;
+}
+.about__title {
+  color: #0A467C;
+  font-family: "Sacramento";
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  background-image: url("./assets/title-backgrounds/about-title.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom 7px right 50%;
+}
+.about__text {
+  text-align: justify;
+  padding: 20px 0 0 0;
+}
+.about__text::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin: 40px auto 0 auto;
+}
+
+.skills__title {
+  background-image: url("./assets/title-backgrounds/skills-title.png");
+}
+.skills__list {
+  margin: 0 0 0 0;
+}
+
+.projects__title {
+  background-image: url("./assets/title-backgrounds/projects-title.png");
+}
+
+.education__title {
+  background-image: url("./assets/title-backgrounds/education-title.png");
+}
+.education__content {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.english__title {
+  background-image: url("./assets/title-backgrounds/english-title.png");
+}
+
+.footer__text {
+  font-family: "Sacramento";
+  font-size: 5rem;
+  text-align: center;
+  color: #0A467C;
+}
+
+/*# sourceMappingURL=style.css.map */
