@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Inter:regular,600" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Sacramento:regular" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Outfit:600" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Krasnova Vera</title>
+</head>
+<body class="body">
+  <div class="body__wrapper">
+    <header class="header">
+      <div class="wrapper">
+        <nav class="header__nav">
+          <ul class="nav">
+            <li lass="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li lass="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li lass="nav__item"><a href="#education" class="nav__link">Education</a></li>
+            <!-- <li lass="nav__item"><a href="#code" class="nav__link">Code</a></li> -->
+            <!-- <li lass="nav__item"><a href="#" class="nav__link">Work experience</a></li> -->
+            <li lass="nav__item"><a href="#english" class="nav__link">English</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="about__wrapper wrapper">
+          <div class="about__content">
+            <h1 class="about__name">Krasnova Vera</h1>
+            <div class="about__photo">
+              <img class="about__image" src="./assets/img/myPhoto.png" alt="My Photo">
+            </div>
+            <div class="about__info">
+              <p class="about__position">Junior frontend developer</p>
+              <div class="about__title-container"><h2 class="about__title">About me</h2></div>
+              <p class="about__text">
+                I am 28 years old, live in Saint-Petersburg. I studied for architect and have graduated in 2016. 
+                For all this time I've been working as an interior designer. But I don't like this kind of job for many reasons. 
+                Now I want to have job which is modern, interesting, thought-provoking, command.
+                Also in this direction I am attracted by the fact that the developers in IT is in constant learning process.
+                I choose to study for Frontend Developer because this development scope is more close for my interests and art skills. 
+                Now I am on the beginning of the my frontend education.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts section" id="contacts">
+        <div class="wrapper">
+          <ul class="contacts__list contacts-list">
+            <li class="contacts-list__item phone"><a href="tel:+79133867943">+79133867943</a></li>
+            <li class="contacts-list__item mail"><a href="mailto:krasnova.verav@gmail.com">krasnova.verav@gmail.com</a></li>
+            <li class="contacts-list__item location">Saint-Petersburg</li>
+            <li class="contacts-list__item github"><a href="https://github.com/VerchkaFeya" target="_blank">VerchkaFeya</a></li>
+            <li class="contacts-list__item linkedin"><a href="https://www.linkedin.com/in/vera-krasnova-991b67131/" target="_blank">VerchkaFeya</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="skills section" id="skills">
+        <div class="wrapper">
+          <span class="title-container"><h2 class="skills__title title">Skills</h2></span>
+          <div class="skills-list">
+            <div class="skills-list__skill">
+              <ul>
+                <li class="skills-list__subskill">Semantic HTML</li>
+              </ul>
+            </div>
+            <div class="skills-list__skill">
+              <ul>
+                <li class="skills-list__subskill">SASS/SCSS</li>
+                <li class="skills-list__subskill">Adaptive/Responsive design</li>
+                <li class="skills-list__subskill">BEM</li>
+              </ul>
+            </div>
+            <div class="skills-list__skill">
+              <ul>
+                <li class="skills-list__subskill">ES6</li>
+                <li class="skills-list__subskill skills-list__subskill_start">React.js (start studying)</li>
+                <li class="skills-list__subskill skills-list__subskill_start">TypeScript (start studying)</li>
+                <li class="skills-list__subskill skills-list__subskill_start">Node JS (start studying)</li>
+              </ul>
+            </div>
+            <div class="skills-list__skill">
+              <ul>
+                <li class="skills-list__subskill">Git/GuitHub</li>
+                <li class="skills-list__subskill">Webpack</li>
+                <li class="skills-list__subskill">Figma</li>
+                <li class="skills-list__subskill">Photoshop</li>
+              </ul>
+            </div>
+          </div>
+          <!-- <p class="skills__text">Information about soft skill</p> -->
+        </div>
+      </section>
+      <section class="projects section" id="projects">
+        <div class="wrapper">
+          <span class="title-container"><h2 class="projects__title title">Projects</h2></span>
+          <div class="projects__slider slider">
+            <input class="slider__radio" type="radio" name="radiobutton" id="radio1" checked>
+            <input class="slider__radio" type="radio" name="radiobutton" id="radio2">
+            <input class="slider__radio" type="radio" name="radiobutton" id="radio3">
+            <input class="slider__radio" type="radio" name="radiobutton" id="radio4">
+            <input class="slider__radio" type="radio" name="radiobutton" id="radio5">
+
+            <div class="slider__slides-wrapper">
+              <div class="slider__slides">
+                <div class="slider__slide slider__slide_1">
+                  <img src="./assets/projects-preview/1-shelter.jpg" alt="shelter">
+                  <div class="slider__overview overview">
+                    <h4 class="overview__title">Shelter for pets</h4>
+                    <p class="overview__description">Two-page site of pets shelter</p>
+                    <p class="overview__goals-title">Goals:</p>
+                    <ul class="overview__goals">
+                      <li class="overview__goals-item">Adaptive and responsive design</li>
+                      <li class="overview__goals-item">Pixel perfect</li>
+                      <li class="overview__goals-item">JS for interactive elements</li>
+                    </ul>
+                    <p class="overview__deploy-link"><a href="https://github.com/VerchkaFeya" target="_blank"><span>Deploy</span></a></p>
+                    <p class="overview__github-link"><a href="https://github.com/VerchkaFeya" target="_blank"><span>GitHub Repo</span></a></p>
+                  </div>
+                </div>
+                <div class="slider__slide slider__slide_2">
+                  <img src="./assets/projects-preview/2-portfolio.jpg" alt="portfolio">
+                  <div class="slider__overview overview">
+                    <h4 class="overview__title">Photographer portfolio</h4>
+                    <p class="overview__description">Landing page with adaptive and interactive design.</p>
+                    <p class="overview__goals-title">Goals:</p>
+                    <ul class="overview__goals">
+                      <li class="overview__goals-item">Semantic HTML</li>
+                      <li class="overview__goals-item">Adaptive design</li>
+                      <li class="overview__goals-item">Using Figma</li>
+                      <li class="overview__goals-item">JS for interactive elements</li>
+                    </ul>
+                    <p class="overview__deploy-link"><a href="#"></a><span>Deploy</span></a></p>
+                    <p class="overview__github-link"><a href="#"></a><span>GitHub Repo</span></a></p>
+                  </div>
+                </div>
+                <div class="slider__slide slider__slide_3">
+                  <img src="./assets/projects-preview/3-virtual-keuboard.jpg" alt="virtual keyboard">
+                  <div class="slider__overview overview">
+                    <h4 class="overview__title">Virtual Keyboard</h4>
+                    <p class="overview__description">////</p>
+                    <p class="overview__goals-title">Goals:</p>
+                    <ul class="overview__goals">
+                      <li class="overview__goals-item">Using ES6</li>
+                      <li class="overview__goals-item">Work with DOM</li>
+                      <li class="overview__goals-item">JS</li>
+                    </ul>
+                    <p class="overview__deploy-link"><a href="https://verchkafeya.github.io/virtual-keyboard-task/src/index.html" target="_blank"><span>Deploy</span></a></p>
+                    <p class="overview__github-link"><a href="https://github.com/VerchkaFeya/virtual-keyboard-task/tree/develop" target="_blank"><span>GitHub Repo</span></a></p>
+                  </div>
+                </div>
+                <div class="slider__slide slider__slide_4">
+                  <img src="./assets/projects-preview/meme4.jpg" alt="travel portal">
+                  <div class="slider__overview">
+                  </div>
+                </div>
+                <div class="slider__slide slider__slide_5">
+                  <img src="./assets/projects-preview/5-tic-tac-toe.jpg" alt="tic tac toe game">
+                  <div class="slider__overview overview">
+                    <h4 class="overview__title">Tic-Tac-Toe Game</h4>
+                    <p class="overview__description">Rolling Scopes School task.
+                      Simple game</p>
+                      <p class="overview__goals-title">Goals:</p>
+                      <ul class="overview__goals">
+                        <li class="overview__goals-item">Using audio</li>
+                        <li class="overview__goals-item">JS functions</li>
+                      </ul>
+                    <p class="overview__deploy-link"><a href="https://verchkafeya.github.io/tic-tac-toe/" target="_blank"><span>Deploy</span></a></p>
+                    <p class="overview__github-link"><a href="https://github.com/VerchkaFeya/tic-tac-toe" target="_blank"><span>GitHub Repo</span></a></p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__controls">
+              <label for="radio1" class="slider__bar"><div class="slider__inside-bar inside-bar_1"></div></label>
+              <label for="radio2" class="slider__bar"><div class="slider__inside-bar inside-bar_2"></div></label>
+              <label for="radio3" class="slider__bar"><div class="slider__inside-bar inside-bar_3"></div></label>
+              <label for="radio4" class="slider__bar"><div class="slider__inside-bar inside-bar_4"></div></label>
+              <label for="radio5" class="slider__bar"><div class="slider__inside-bar inside-bar_5"></div></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="education section" id="education">
+        <div class="wrapper">
+          <span class="title-container"><h2 class="education__title title">Education</h2></span>
+          <div class="education__content education-table">
+            <div class="education-table__row">
+              <div class="education-table__year">
+                2022
+              </div>
+              <div class="education-table__school">
+                Rolling Scopes School
+              </div>
+            </div>
+            <div class="education-table__row">
+              <div class="education-table__year">
+                2021
+              </div>
+              <div class="education-table__school">
+                Self-education
+              </div>
+            </div>
+            <div class="education-table__row">
+              <div class="education-table__year">
+              </div>
+              <div class="education-table__subitem">
+                HTML Academy<br>Learn.JavaScript<br>CodeWars
+              </div>
+            </div>
+            <div class="education-table__row">
+              <div class="education-table__year">
+                2010<br>-<br>2016
+              </div>
+              <div class="education-table__school">
+                Novosibirsk State University of Architecture, Design and Arts
+              </div>
+            </div>
+            <div class="education-table__row">
+              <div class="education-table__year">
+              </div>
+              <div class="education-table__subitem">
+                Architect, Urban Design Faculty
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="english section" id="english">
+        <div class="wrapper">
+          <span class="title-container"><h2 class="english__title title">English</h2></span>
+          <p>B1-Pre-Intermediate</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p class="footer__text">Thanks!</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
