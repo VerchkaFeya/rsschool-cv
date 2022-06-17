@@ -16,12 +16,12 @@
       <div class="wrapper">
         <nav class="header__nav">
           <ul class="nav">
-            <li lass="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-            <li lass="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-            <li lass="nav__item"><a href="#education" class="nav__link">Education</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
             <!-- <li lass="nav__item"><a href="#code" class="nav__link">Code</a></li> -->
             <!-- <li lass="nav__item"><a href="#" class="nav__link">Work experience</a></li> -->
-            <li lass="nav__item"><a href="#english" class="nav__link">English</a></li>
+            <li class="nav__item"><a href="#english" class="nav__link">English</a></li>
           </ul>
         </nav>
       </div>
@@ -49,7 +49,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts section" id="contacts">
+      <div class="contacts section" id="contacts">
         <div class="wrapper">
           <ul class="contacts__list contacts-list">
             <li class="contacts-list__item phone"><a href="tel:+79133867943">+79133867943</a></li>
@@ -59,10 +59,10 @@
             <li class="contacts-list__item linkedin"><a href="https://www.linkedin.com/in/vera-krasnova-991b67131/" target="_blank">VerchkaFeya</a></li>
           </ul>
         </div>
-      </section>
+      </div>
       <section class="skills section" id="skills">
         <div class="wrapper">
-          <span class="title-container"><h2 class="skills__title title">Skills</h2></span>
+          <div class="title-container"><h2 class="skills__title title">Skills</h2></div>
           <div class="skills-list">
             <div class="skills-list__skill">
               <ul>
@@ -86,20 +86,21 @@
             </div>
             <div class="skills-list__skill">
               <ul>
-                <li class="skills-list__subskill">Git/GuitHub</li>
+                <li class="skills-list__subskill">Git/GitHub</li>
                 <li class="skills-list__subskill">Webpack</li>
                 <li class="skills-list__subskill">Figma</li>
                 <li class="skills-list__subskill">Photoshop</li>
               </ul>
             </div>
           </div>
-          <!-- <p class="skills__text">Information about soft skill</p> -->
+          <p class="skills__text">Information about soft skill</p>
         </div>
       </section>
       <section class="projects section" id="projects">
         <div class="wrapper">
-          <span class="title-container"><h2 class="projects__title title">Projects</h2></span>
+          <div class="title-container"><h2 class="projects__title title">Projects</h2></div>
           <div class="projects__slider slider">
+
             <input class="slider__radio" type="radio" name="radiobutton" id="radio1" checked>
             <input class="slider__radio" type="radio" name="radiobutton" id="radio2">
             <input class="slider__radio" type="radio" name="radiobutton" id="radio3">
@@ -107,12 +108,14 @@
             <input class="slider__radio" type="radio" name="radiobutton" id="radio5">
 
             <div class="slider__slides-wrapper">
+
               <div class="slider__slides">
+
                 <div class="slider__slide slider__slide_1">
                   <img src="./assets/projects-preview/1-shelter.jpg" alt="shelter">
                   <div class="slider__overview overview">
                     <h4 class="overview__title">Shelter for pets</h4>
-                    <p class="overview__description">Two-page site of pets shelter</p>
+                    <p class="overview__description">Two-page site of pets shelter with popups, pagination and slider</p>
                     <p class="overview__goals-title">Goals:</p>
                     <ul class="overview__goals">
                       <li class="overview__goals-item">Adaptive and responsive design</li>
@@ -120,46 +123,11 @@
                       <li class="overview__goals-item">JS for interactive elements</li>
                     </ul>
                     <p class="overview__deploy-link"><a href="https://github.com/VerchkaFeya" target="_blank"><span>Deploy</span></a></p>
-                    <p class="overview__github-link"><a href="https://github.com/VerchkaFeya" target="_blank"><span>GitHub Repo</span></a></p>
+                    <p class="overview__github-link"><a href="https://github.com/VerchkaFeya/Shelter" target="_blank"><span>GitHub Repo</span></a></p>
                   </div>
                 </div>
+
                 <div class="slider__slide slider__slide_2">
-                  <img src="./assets/projects-preview/2-portfolio.jpg" alt="portfolio">
-                  <div class="slider__overview overview">
-                    <h4 class="overview__title">Photographer portfolio</h4>
-                    <p class="overview__description">Landing page with adaptive and interactive design.</p>
-                    <p class="overview__goals-title">Goals:</p>
-                    <ul class="overview__goals">
-                      <li class="overview__goals-item">Semantic HTML</li>
-                      <li class="overview__goals-item">Adaptive design</li>
-                      <li class="overview__goals-item">Using Figma</li>
-                      <li class="overview__goals-item">JS for interactive elements</li>
-                    </ul>
-                    <p class="overview__deploy-link"><a href="#"></a><span>Deploy</span></a></p>
-                    <p class="overview__github-link"><a href="#"></a><span>GitHub Repo</span></a></p>
-                  </div>
-                </div>
-                <div class="slider__slide slider__slide_3">
-                  <img src="./assets/projects-preview/3-virtual-keuboard.jpg" alt="virtual keyboard">
-                  <div class="slider__overview overview">
-                    <h4 class="overview__title">Virtual Keyboard</h4>
-                    <p class="overview__description">////</p>
-                    <p class="overview__goals-title">Goals:</p>
-                    <ul class="overview__goals">
-                      <li class="overview__goals-item">Using ES6</li>
-                      <li class="overview__goals-item">Work with DOM</li>
-                      <li class="overview__goals-item">JS</li>
-                    </ul>
-                    <p class="overview__deploy-link"><a href="https://verchkafeya.github.io/virtual-keyboard-task/src/index.html" target="_blank"><span>Deploy</span></a></p>
-                    <p class="overview__github-link"><a href="https://github.com/VerchkaFeya/virtual-keyboard-task/tree/develop" target="_blank"><span>GitHub Repo</span></a></p>
-                  </div>
-                </div>
-                <div class="slider__slide slider__slide_4">
-                  <img src="./assets/projects-preview/meme4.jpg" alt="travel portal">
-                  <div class="slider__overview">
-                  </div>
-                </div>
-                <div class="slider__slide slider__slide_5">
                   <img src="./assets/projects-preview/5-tic-tac-toe.jpg" alt="tic tac toe game">
                   <div class="slider__overview overview">
                     <h4 class="overview__title">Tic-Tac-Toe Game</h4>
@@ -174,22 +142,83 @@
                     <p class="overview__github-link"><a href="https://github.com/VerchkaFeya/tic-tac-toe" target="_blank"><span>GitHub Repo</span></a></p>
                   </div>
                 </div>
+
+                <div class="slider__slide slider__slide_3">
+                  <img src="./assets/projects-preview/3-virtual-keuboard.jpg" alt="virtual keyboard">
+                  <div class="slider__overview overview">
+                    <h4 class="overview__title">Virtual Keyboard</h4>
+                    <p class="overview__description">Keyboard must meet the following requirements: 
+                      pressing a key on a physical keyboard highlights the key on the virtual keyboard,
+                      clicks on the buttons with a mouse on the virtual keyboard and pressing keys on a physical keyboard 
+                      should input symbols to the text area located on the page above the virtual keyboard,
+                      keystrokes are animated.
+                    </p>
+                    <p class="overview__goals-title">Goals:</p>
+                    <ul class="overview__goals">
+                      <li class="overview__goals-item">Generate HTML with JS</li>
+                      <li class="overview__goals-item">Using ES6</li>
+                      <li class="overview__goals-item">Work with DOM</li>
+                      <li class="overview__goals-item">JS</li>
+                      <li class="overview__goals-item">Use ESLint</li>
+                    </ul>
+                    <p class="overview__deploy-link"><a href="https://verchkafeya.github.io/virtual-keyboard-task/src/index.html" target="_blank"><span>Deploy</span></a></p>
+                    <p class="overview__github-link"><a href="https://github.com/VerchkaFeya/virtual-keyboard-task/tree/develop" target="_blank"><span>GitHub Repo</span></a></p>
+                  </div>
+                </div>
+
+                <div class="slider__slide slider__slide_4">
+                  <img src="./assets/projects-preview/meme4.jpg" alt="travel portal">
+                  <div class="slider__overview overview">
+                    <h4 class="overview__title">Travel portal</h4>
+                    <p class="overview__description">One-page simple site of travel portal, 
+                      with slider, popups ????</p>
+                    <p class="overview__goals-title">Goals:</p>
+                    <ul class="overview__goals">
+                      <li class="overview__goals-item">Adaptive and responsive design</li>
+                      <li class="overview__goals-item">Pixel perfect</li>
+                      <li class="overview__goals-item">JS for interactive elements</li>
+                      <li class="overview__goals-item">Use local storage</li>
+                    </ul>
+                    <p class="overview__deploy-link"><a href="https://verchkafeya.github.io/travel/index.html" target="_blank"><span>Deploy</span></a></p>
+                    <p class="overview__github-link"><a href="https://github.com/VerchkaFeya/travel" target="_blank"><span>GitHub Repo</span></a></p>
+                  </div>
+                </div>
+
+                <div class="slider__slide slider__slide_5">
+                  <img src="./assets/projects-preview/2-portfolio.jpg" alt="portfolio">
+                  <div class="slider__overview overview">
+                    <h4 class="overview__title">Photographer portfolio</h4>
+                    <p class="overview__description">Landing page with adaptive and interactive design, 
+                      with light and dark themes and with changing languages.</p>
+                    <p class="overview__goals-title">Goals:</p>
+                    <ul class="overview__goals">
+                      <li class="overview__goals-item">Semantic HTML</li>
+                      <li class="overview__goals-item">Adaptive design</li>
+                      <li class="overview__goals-item">Using Figma</li>
+                      <li class="overview__goals-item">JS for interactive elements</li>
+                    </ul>
+                    <p class="overview__deploy-link"><a href="https://rolling-scopes-school.github.io/verchkafeya-JSFEPRESCHOOL/portfolio/"><span>Deploy</span></a></p>
+                    <p class="overview__github-link"><a href="#"><span>GitHub Repo</span></a></p>
+                  </div>
                 </div>
               </div>
+
             </div>
+
             <div class="slider__controls">
-              <label for="radio1" class="slider__bar"><div class="slider__inside-bar inside-bar_1"></div></label>
-              <label for="radio2" class="slider__bar"><div class="slider__inside-bar inside-bar_2"></div></label>
-              <label for="radio3" class="slider__bar"><div class="slider__inside-bar inside-bar_3"></div></label>
-              <label for="radio4" class="slider__bar"><div class="slider__inside-bar inside-bar_4"></div></label>
-              <label for="radio5" class="slider__bar"><div class="slider__inside-bar inside-bar_5"></div></label>
+              <label for="radio1" class="slider__bar"><span class="slider__inside-bar inside-bar_1"></span></label>
+              <label for="radio2" class="slider__bar"><span class="slider__inside-bar inside-bar_2"></span></label>
+              <label for="radio3" class="slider__bar"><span class="slider__inside-bar inside-bar_3"></span></label>
+              <label for="radio4" class="slider__bar"><span class="slider__inside-bar inside-bar_4"></span></label>
+              <label for="radio5" class="slider__bar"><span class="slider__inside-bar inside-bar_5"></span></label>
             </div>
+
           </div>
         </div>
       </section>
       <section class="education section" id="education">
         <div class="wrapper">
-          <span class="title-container"><h2 class="education__title title">Education</h2></span>
+          <div class="title-container"><h2 class="education__title title">Education</h2></div>
           <div class="education__content education-table">
             <div class="education-table__row">
               <div class="education-table__year">
@@ -234,7 +263,7 @@
       </section>
       <section class="english section" id="english">
         <div class="wrapper">
-          <span class="title-container"><h2 class="english__title title">English</h2></span>
+          <div class="title-container"><h2 class="english__title title">English</h2></div>
           <p>B1-Pre-Intermediate</p>
         </div>
       </section>
